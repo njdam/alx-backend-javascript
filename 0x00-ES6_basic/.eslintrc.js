@@ -27,6 +27,10 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    "rules": {
-    }
+    "rules": {},
+    "settings": {
+        "react": {
+            "version": '16.14.0',
+        },
+    },
 }
