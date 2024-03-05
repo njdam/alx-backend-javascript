@@ -1,5 +1,10 @@
 /* Iterating through report objects */
 export default function createIteratorObject(report) {
-  const employees = Object.values(report.allEmployees).flat();
-  return employees[Symbol.iterator]();
+  return (function* _() {
+    for (const depart of Object.values(report.allEmployees)) {
+      for (const employee of depart) {
+        yield employee;
+      }
+    }
+  }());
 }
