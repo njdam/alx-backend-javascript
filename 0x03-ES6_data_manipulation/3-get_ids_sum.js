@@ -1,3 +1,4 @@
+// Reduce - A function that returns the sum of all the student ids
 export default function getStudentIdsSum(studentsInfo) {
   const array = [];
 
