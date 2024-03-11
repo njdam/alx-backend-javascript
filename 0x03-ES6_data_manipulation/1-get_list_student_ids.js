@@ -1,3 +1,4 @@
+// More mapping - A function that returns an array of ids from a list of object
 export default function getListStudentIds(list) {
   let array = [];
 
