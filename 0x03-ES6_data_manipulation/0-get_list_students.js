@@ -1,3 +1,4 @@
+// Basic list of objects - A function that returns an array of objects
 export default function getListStudents() {
   const array = [
     { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
