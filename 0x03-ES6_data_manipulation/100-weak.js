@@ -1,4 +1,4 @@
-// Export a const instance of WeakMap and name it weakMap 
+// Export a const instance of WeakMap and name it weakMap
 export const weakMap = new WeakMap();
 
 /**
@@ -8,7 +8,7 @@ export const weakMap = new WeakMap();
  * @param {
  *   protocol: 'http',
  *   name: 'getUsers',
- * } endpoint - an endpoint argument 
+ * } endpoint - an endpoint argument
  */
 export function queryAPI(endpoint) {
   if (!weakMap.has(endpoint)) {
