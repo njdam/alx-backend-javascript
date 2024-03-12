@@ -11,14 +11,23 @@ export const weakMap = new WeakMap();
  * } endpoint - an endpoint argument
  */
 export function queryAPI(endpoint) {
-  if (!weakMap.has(endpoint)) {
-    weakMap.set(endpoint, 0);
-  } else {
-    const count = weakMap.get(endpoint);
-    if (count >= 5) {
-      throw new Error('Endpoint load is high');
+  if (
+    typeof endpoint === 'object'
+    && endpoint !== null
+    && 'protocol' in endpoint
+    && typeof endpoint.protocol === 'string'
+    && 'name' in endpoint
+    && typeof endpoint.name === 'string'
+  ) {
+    if (!weakMap.has(endpoint)) {
+      weakMap.set(endpoint, 1);
     } else {
-      weakMap.set(endpoint, count + 1);
+      const count = weakMap.get(endpoint);
+      if (count >= 5) {
+        throw new Error('Endpoint load is high');
+      } else {
+        weakMap.set(endpoint, count + 1);
+      }
     }
   }
 }
