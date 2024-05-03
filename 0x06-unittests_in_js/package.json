@@ -1,0 +1,14 @@
+{
+  "name": "unittests-js",
+  "version": "1.0.0",
+  "description": "Unittest JavaScript Testing Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jean Damascene NGABOYIMANA",
+  "license": "ALX-AFRICA",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
+}
