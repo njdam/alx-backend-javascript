@@ -1,0 +1,34 @@
+{
+  "name": "10-api",
+  "version": "1.0.0",
+  "description": "Unittest JavaScript Testing Project",
+  "main": "api.js",
+  "author": "Jean Damascene NGABOYIMANA <jeandamngaboyimana@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^10.4.0",
+    "request": "^2.88.2",
+    "sinon": "^7.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/njdam/alx-backend-javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/njdam/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/njdam/alx-backend-javascript/tree/main/0x06-unittests_in_js/8-api",
+  "engines": {
+    "node": "12.x",
+    "npm": "8.x",
+    "yarn": "1.x"
+  }
+}
